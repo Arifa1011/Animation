@@ -1,0 +1,92 @@
+body{
+    margin:0;
+}
+
+nav{
+background-color: crimson;
+
+}
+
+ul{
+
+    list-style: georgian;
+}
+
+li{
+    display: inline;
+    margin-left: 30px;
+}
+
+a{
+
+    color: gray;
+    font-size: 20px;
+    text-decoration: dotted;
+    transition: 3s all;
+
+}
+
+a:hover{
+
+    background-color: hotpink;
+    color: black;
+    
+}
+
+.flex-container{
+
+    display: flex;
+}
+
+.flex-item1{
+
+    flex:20%;
+    background-color: darkturquoise;
+}
+
+.flex-item2{
+
+    flex:80%;
+    background-color: plum;
+    text-align: center;
+}
+
+header{
+
+    background-color: darkslateblue;
+    height: 40px;
+}
+
+.slider{
+    height: 500px;
+    background-image: url('../images/download_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+/*  Animation Code */
+
+    animation-name: anitest;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes anitest{
+
+    from{
+
+        background-image: url('../images/download_2.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+
+    }
+
+    to{
+        background-image: url('../images/download_3.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
